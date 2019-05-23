@@ -88,10 +88,43 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/cowsayhi.jsx":
+/*!*********************************!*\
+  !*** ./components/cowsayhi.jsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var cowsay_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cowsay-browser */ "cowsay-browser");
+/* harmony import */ var cowsay_browser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(cowsay_browser__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/MasterCommander/github/potpiedigital/nextjs_starter/components/cowsayhi.jsx";
+
+
+
+function CowsayHi() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, cowsay_browser__WEBPACK_IMPORTED_MODULE_1___default.a.say({
+    text: "hi there!"
+  }));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CowsayHi);
+
+/***/ }),
 
 /***/ "./pages/index.jsx":
 /*!*************************!*\
@@ -104,24 +137,32 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_cowsayhi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/cowsayhi */ "./components/cowsayhi.jsx");
 var _jsxFileName = "/Users/MasterCommander/github/potpiedigital/nextjs_starter/pages/index.jsx";
+
 
 
 function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 5
     },
     __self: this
-  }, "Welcome to Next.js!");
+  }, "Welcome to Next.js!", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cowsayhi__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/
@@ -130,6 +171,17 @@ function Home() {
 
 module.exports = __webpack_require__(/*! /Users/MasterCommander/github/potpiedigital/nextjs_starter/pages/index.jsx */"./pages/index.jsx");
 
+
+/***/ }),
+
+/***/ "cowsay-browser":
+/*!*********************************!*\
+  !*** external "cowsay-browser" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("cowsay-browser");
 
 /***/ }),
 

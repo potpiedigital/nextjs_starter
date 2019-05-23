@@ -1,7 +1,12 @@
-import CowsayHi from "../cowsayhi.jsx";
+import CowsayHi from "../components/cowsayhi";
 
 function Home() {
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <div>
+      Welcome to Next.js!
+      <CowsayHi />
+    </div>
+  );
 }
 
 export default Home;
